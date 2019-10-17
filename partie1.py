@@ -19,4 +19,32 @@ try:
             print("rentrer votre vrai âge !")
 except ValueError:
     print("petit malin tu m'aura pas ;)")
-         
+
+# exo3:Le nombre caché
+Nombre_caché = 18
+User = int(input("Quel est le nombre caché ? "))
+
+while Nombre_caché != User:
+    if User > Nombre_caché:
+        print("Le nombre est trop grand")
+        User = int(input("Recommence"))
+    if User < Nombre_caché:
+        print("Le Nombre est trop petit")
+        User = int(input("Recommence"))
+    if User == Nombre_caché:
+        print("Bien jouer tu as trouver le bon nombre !")
+if User == Nombre_caché:
+    print("bravooooo!!!")  
+
+#exo4: Des nombres en boucles
+input("appuyer sur enter")
+for x in range(101):
+    print(x)
+
+#exo5: Des nombres en boucle bis
+for x in range(101):
+    if x%2 == 0:
+        print(int(x), "Ce nombre est pair")
+        
+#exo6: Remplir la piscine
+
